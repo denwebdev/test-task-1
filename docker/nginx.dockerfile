@@ -2,4 +2,4 @@ FROM nginx
 
 ADD docker/conf/vhost.conf /etc/nginx/conf.d/default.conf
 
-WORKDIR /var/www/sasco-back.local
+WORKDIR /var/www/test-task-1
