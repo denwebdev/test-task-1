@@ -41,7 +41,7 @@ class Query extends Model implements QueryInterface
 
     public function isExpired(): bool
     {
-        return $this->updated_at->diffInHours(Carbon::now()) >= 1;
+        return $this->updated_at->diffInHours(Carbon::now()) >= 24;
     }
 
     public function getQuery(string $inn): self
